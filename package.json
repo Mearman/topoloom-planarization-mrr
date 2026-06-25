@@ -1,0 +1,13 @@
+{
+  "name": "topoloom-planarization-mrr",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Minimal reproduction of @khalidsaidi/topoloom planarizationLayout throwing on a multi-edge non-planar graph.",
+  "scripts": {
+    "repro": "node repro.mjs"
+  },
+  "dependencies": {
+    "@khalidsaidi/topoloom": "0.2.7"
+  }
+}
