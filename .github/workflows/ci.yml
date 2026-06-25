@@ -1,0 +1,29 @@
+name: repro
+
+# This workflow runs the minimal reproduction. It is expected to FAIL while
+# the upstream bug in @khalidsaidi/topoloom's planarizationLayout exists.
+# A green run means the bug is fixed and this repo can be archived.
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  repro:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: npm
+
+      - name: Install
+        run: npm install
+
+      - name: Run reproduction
+        run: npm run repro
