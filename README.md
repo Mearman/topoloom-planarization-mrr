@@ -1,5 +1,7 @@
 # topoloom `planarizationLayout` — minimal reproduction
 
+[![GitHub](https://img.shields.io/badge/GitHub-181717?logo=github&logoColor=white)](https://github.com/Mearman/topoloom-planarization-mrr) [![CI](https://img.shields.io/github/actions/workflow/status/Mearman/topoloom-planarization-mrr/ci.yml?branch=main)](https://github.com/Mearman/topoloom-planarization-mrr/actions)
+
 `@khalidsaidi/topoloom@0.2.7`'s `planarizationLayout(graph)` throws
 `"Planarization graph should be planar"` on a 20-node / 28-edge non-planar
 graph that needs several edges removed to planarise.
